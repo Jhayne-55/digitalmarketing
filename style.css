@@ -1883,11 +1883,11 @@ border: 10px solid #99ea48;
   }
   .serviceDiscription h1 {
     font-size: 22px;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
   }
   .serviceDiscription p {
     font-size: 12px;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
   }
 }
 @media (max-width: 480px) {
