@@ -1509,6 +1509,7 @@ border: 10px solid #99ea48;
 
 @media (max-width: 768px) {
   body {
+    width: 100%;
     overflow-x: hidden;
   }
   #side-bar {
@@ -1824,6 +1825,9 @@ border: 10px solid #99ea48;
 }
 
 @media (max-width: 600px) {
+  body{
+    width: 100%;
+  }
   .workWithUs button {
     width: 40%;
     margin: auto;
@@ -1868,6 +1872,7 @@ border: 10px solid #99ea48;
 }
 @media (max-width: 480px) {
   body {
+    width: 100%;
     overflow-x: hidden;
   }
   .workWithUs button {
