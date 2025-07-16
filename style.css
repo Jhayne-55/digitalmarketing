@@ -3,10 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+html,body{
+  overflow: hidden;
+}
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-image: url(/img/Background\ Noise.png);
-  overflow-x: hidden;
 }
 .wrapper {
   width: 100%;
@@ -1925,6 +1927,11 @@ border: 10px solid #99ea48;
   .reviewProfile {
     width: 70%;
   }
+  .realWorld-detail{
+    height: 80px;
+    width: 80px;
+    font-size: 12px;
+  }
   .cardicon {
     padding: 6rem 10rem;
   }
@@ -1993,6 +2000,21 @@ border: 10px solid #99ea48;
   .text {
     width: 90%;
   }
+  .SEO-serviceCard2 {
+    width: 100%;
+    margin: 1rem 0;
+    height: 350px;
+  }
+  .SEO-serviceCard3 {
+    width: 100%;
+    margin: 1rem 0;
+    height: 350px;
+  }
+  .SEO-serviceCard1 {
+    width: 100%;
+    margin: 1rem 0;
+    height: 350px;
+  }
 
 }
 @media (max-width:320px) {
@@ -2018,5 +2040,20 @@ border: 10px solid #99ea48;
   }
   .hero-content button i{
     padding-left: 0.5rem;
+  }
+  .SEO-serviceCard2 {
+    width: 100%;
+    margin: 1rem 0;
+    height: 300px;
+  }
+  .SEO-serviceCard3 {
+    width: 100%;
+    margin: 1rem 0;
+    height: 300px;
+  }
+  .SEO-serviceCard1 {
+    width: 100%;
+    margin: 1rem 0;
+    height: 300px;
   }
 }
