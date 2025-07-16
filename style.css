@@ -387,6 +387,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  overflow-x: hidden;
 }
 .realWorldExperience h1 {
   font-size: 48px;
@@ -1483,6 +1484,10 @@ border: 10px solid #99ea48;
   .minutes p {
     width: 40%;
     align-self: right;
+  }
+  .readyToWork{
+    width: 100%;
+    overflow-x: hidden;
   }
   .workWithUs h1 {
     font-size: 50px;
