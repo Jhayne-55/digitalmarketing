@@ -1751,9 +1751,6 @@ border: 10px solid #99ea48;
     font-size: 22px;
     padding: 0 0.3rem;
   }
-  .SEO-serviceContent h1{
-    font-size: 32px;
-  }
 
   .FAQs-flex {
     flex-direction: column;
@@ -2066,16 +2063,25 @@ border: 10px solid #99ea48;
   .SEO-serviceCard2 {
     width: 100%;
     margin: 1rem 0;
-    height: 300px;
+    height: 350px;
   }
   .SEO-serviceCard3 {
     width: 100%;
     margin: 1rem 0;
-    height: 300px;
+    height: 350px;
+  }
+  .SEO-serviceCard3 p{
+    font-size: 10px;
+  }
+  .SEO-serviceCard1 p{
+    font-size: 10px;
+  }
+  .SEO-serviceCard2 p{
+    font-size: 10px;
   }
   .SEO-serviceCard1 {
     width: 100%;
     margin: 1rem 0;
-    height: 300px;
+    height: 350px;
   }
 }
