@@ -1751,6 +1751,9 @@ border: 10px solid #99ea48;
     font-size: 22px;
     padding: 0 0.3rem;
   }
+  .SEO-serviceContent h1{
+    font-size: 32px;
+  }
 
   .FAQs-flex {
     flex-direction: column;
@@ -1889,6 +1892,7 @@ border: 10px solid #99ea48;
     font-size: 12px;
     padding: 0 1rem;
   }
+
 }
 @media (max-width: 480px) {
   body {
