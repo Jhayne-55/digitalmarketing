@@ -1487,7 +1487,6 @@ border: 10px solid #99ea48;
   }
   .readyToWork{
     width: 100%;
-    overflow-x: hidden;
   }
   .workWithUs h1 {
     font-size: 50px;
@@ -1600,6 +1599,7 @@ border: 10px solid #99ea48;
     font-weight: 600;
     line-height: 140%;
     background-color: transparent;
+    color: #010205;
   }
   nav {
     padding: 1rem 0.5rem;
