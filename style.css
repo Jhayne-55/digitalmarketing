@@ -1725,7 +1725,7 @@ border: 10px solid #99ea48;
     font-size: 12px;
   }
   .review {
-    padding: 5rem 0.5rem;
+    padding: 5rem 0rem;
   }
   .reviewProfile p {
     font-size: 14px;
@@ -1773,7 +1773,7 @@ border: 10px solid #99ea48;
     margin: 0.5rem 0;
   }
   .SEO-serviceflex {
-    margin: 4rem 0.5rem;
+    margin: 4rem 0;
     flex-direction: column;
   }
   .SEO-serviceCard1 {
