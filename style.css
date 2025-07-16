@@ -1661,12 +1661,19 @@ border: 10px solid #99ea48;
   .serviceDiscription {
     padding: 0 0rem;
     margin: auto;
+    justify-content: center;
+    align-items: center;
   }
   .serviceDiscription h1 {
     font-size: 36px;
+    align-self: center;
+    margin:  0 auto;
   }
   .serviceDiscription p {
     font-size: 14px;
+    align-self: center;
+    margin: 0 auto;
+    
   }
   .serviceCard1 {
     width: 98%;
@@ -1676,6 +1683,8 @@ border: 10px solid #99ea48;
   }
   .serviceCard {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .cardicon {
     padding: 5rem 20rem;
