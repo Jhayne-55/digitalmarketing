@@ -1993,4 +1993,15 @@ border: 10px solid #99ea48;
   .text {
     width: 90%;
   }
+
+}
+@media (min-width:320px) {
+  .cardicon {
+    padding: 3rem 10rem;
+  }
+  .cardicon i {
+    width: 90px;
+    height: 90px;
+    font-size: 36px;
+  }
 }
