@@ -1690,7 +1690,7 @@ border: 10px solid #99ea48;
     font-size: 18px;
   }
   .realWorldExperience h1 {
-    font-size: 42px;
+    font-size: 36px;
   }
   .realWorldExperience-btn {
     display: grid;
@@ -1730,6 +1730,9 @@ border: 10px solid #99ea48;
     padding: 5rem 0rem;
   }
   .reviewProfile p {
+    font-size: 12px;
+  }
+  .reviewProfile h6{
     font-size: 14px;
   }
   .reviewFlex {
@@ -1738,11 +1741,15 @@ border: 10px solid #99ea48;
     width: 100%;
   }
   .reviewButton {
-    width: 50%;
-    margin: 2rem 0;
+    width: 55%;
+    margin: 2rem 0.5rem;
   }
   .reviewProfile {
-    width: 40%;
+    width: 50%;
+  }
+  .review p{
+    font-size: 22px;
+    padding: 0 0.3rem;
   }
 
   .FAQs-flex {
@@ -1870,6 +1877,17 @@ border: 10px solid #99ea48;
   .realWorld-detail{
     height: 80px;
     width: 80px;
+  }
+  .realWorld-detail p{
+    font-size: 11px;
+  }
+  .serviceDiscription h1 {
+    font-size: 22px;
+    padding: 0 0.5rem;
+  }
+  .serviceDiscription p {
+    font-size: 12px;
+    padding: 0 0.5rem;
   }
 }
 @media (max-width: 480px) {
