@@ -2004,4 +2004,19 @@ border: 10px solid #99ea48;
     height: 90px;
     font-size: 36px;
   }
+  
+  .hero-content h1{
+    font-size: 38px;
+    width: 100%;
+  }
+  .hero-content p{
+    font-size: 14px;
+  }
+  .hero-content button{
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+  }
+  .hero-content button i{
+    padding-left: 0.5rem;
+  }
 }
