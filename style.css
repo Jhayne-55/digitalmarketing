@@ -1,0 +1,1986 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-image: url(/img/Background\ Noise.png);
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+#Hambar {
+  display: none;
+}
+#side-btn {
+  display: none;
+}
+.notify {
+  display: flex;
+  align-items: center;
+}
+#minimize {
+  display: none;
+  align-self: right;
+}
+.notify-bell {
+  background-color: #010205;
+  padding: 1rem;
+  border-radius: 100%;
+  color: white;
+  font-size: 20px;
+  width: 40%;
+  margin: 0.5rem 0.5rem;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
+}
+.companyLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav h1 {
+  color: #020407;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 0.5rem;
+}
+nav ul {
+  margin: 0 5rem;
+  align-items: center;
+  display: flex;
+}
+nav ul li {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 1rem;
+  list-style: none;
+}
+nav ul li a {
+  color: #020407;
+  text-decoration: none;
+}
+nav ul li a i {
+  font-size: 12px;
+  color: #010205;
+  text-align: center;
+  padding: 0 5px;
+}
+
+nav button {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  border: #010205 1px solid;
+  outline: none;
+  margin: 0 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  background-color: transparent;
+}
+.notification-bell {
+  background-color: #010205;
+  padding: 0.8rem 1rem;
+  border-radius: 100%;
+  color: white;
+  font-size: 18px;
+}
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 40%;
+}
+.agency-nav {
+  position: relative;
+}
+#nav-dropdown {
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: #878c91;
+  list-style: none;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  z-index: 99999;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+#nav-dropdown p {
+  padding: 8px 8px;
+  margin: 1rem 0;
+}
+#nav-dropdown :hover {
+  color: #010205;
+}
+.service-nav {
+  position: relative;
+}
+.service-drop {
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: #878691;
+  list-style: none;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  z-index: 99999;
+}
+.service-drop :hover {
+  color: #010205;
+}
+.service-drop p {
+  padding: 8px 8px;
+}
+.case-nav {
+  position: relative;
+}
+#case-dropdown {
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: #878691;
+  list-style: none;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  z-index: 99999;
+}
+#case-dropdown :hover {
+  color: #010205;
+}
+#case-dropdown p {
+  padding: 8px 15px;
+}
+.Resource-nav {
+  position: relative;
+}
+#Resource-drop {
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: #878691;
+  list-style: none;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  z-index: 99999;
+}
+#Resource-drop :hover {
+  color: #010205;
+}
+#Resource-drop p {
+  padding: 8px 10px;
+}
+.hero {
+  padding-top: 5rem;
+}
+.hero-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.hero-description {
+  width: 50%;
+}
+.hero-content h1 {
+  font-size: 70px;
+  color: #010205;
+  line-height: 110%;
+  width: 100%;
+}
+.hero-content p {
+  font-size: 16px;
+  color: #878c91;
+  width: 70%;
+  padding: 1rem 0;
+  line-height: 180%;
+}
+.hero-content button {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #010205;
+  border-radius: 70px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.hero-content button i {
+  padding-left: 1rem;
+}
+.hero-content a {
+  font-size: 16px;
+  line-height: 180px;
+  color: #010205;
+  font-weight: 600;
+  margin: 0 5rem;
+}
+.heroimg {
+  width: 50%;
+}
+.heroimg img {
+  height: 588px;
+  width: 616px;
+  object-fit: cover;
+}
+.trusted-brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding-top: 3rem;
+}
+
+.trusted-brands h6 {
+  color: #010205;
+  font-size: 14px;
+  width: 30%;
+  line-height: 160%;
+}
+.trusted-brands h3 {
+  color: #878691;
+  font-size: 16px;
+  font-size: 100;
+}
+.trusted-brands h3 i {
+  font-size: 18px;
+  text-align: center;
+  padding: 0 0.3rem;
+}
+main {
+  width: 100%;
+  padding-top: 4.4rem;
+  padding-bottom: 5.4rem;
+}
+.serviceDiscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.serviceDiscription p {
+  color: #878c91;
+  font-size: 16px;
+  width: 49%;
+  line-height: 180%;
+}
+.serviceDiscription h1 {
+  font-size: 48px;
+  color: #010205;
+  line-height: 130%;
+  width: 49%;
+}
+.card1 {
+  background-image: url(/img/image\ 61.png);
+  width: 100%;
+  height: 382px;
+  background-color: black;
+  border-radius: 30px;
+  background-size: cover;
+  padding: 1rem 2rem;
+}
+.card1 h1 {
+  color: white;
+  font-size: 84px;
+  letter-spacing: -3%;
+}
+.card1 p {
+  font-size: 19px;
+  color: #878691;
+  line-height: 170%;
+}
+.card1Profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.card1Profile h6 {
+  font-size: 74px;
+  font-weight: 700;
+  color: white;
+  align-self: center;
+}
+.card1Profile {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8rem;
+  align-items: center;
+}
+.card2 {
+  height: 382px;
+  width: 100%;
+  border-radius: 30px;
+  background-image: url(/img/programming-background-with-person-working-with-codes-computer.jpg);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+.card2 h1 {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 9rem;
+  color: white;
+}
+.cardicon {
+  padding: 5rem 28rem;
+}
+.cardicon i {
+  width: 163px;
+  height: 163px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 9999;
+  font-size: 44px;
+  border: solid 12px white;
+  background-color: #99ea48;
+  color: #010205;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviceCard1 {
+  width: 29%;
+}
+.serviceCard2 {
+  width: 70%;
+}
+.serviceCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+.realWorldExperience {
+  padding: 4rem;
+  border-radius: 30px;
+  background-image: url(/img/image\ 61.png);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.realWorldExperience h1 {
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  margin: auto;
+  padding-top: 5rem;
+}
+.realWorldExperience-btn1 {
+  font-size: 16px;
+  outline: none;
+  border: 1px solid white;
+  padding: 13px 16px;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  margin: 0 1rem;
+}
+.realWorldExperience-btn1:hover {
+  background-color: #99ea48;
+  color: #010205;
+  border: none;
+}
+
+.realWorldExperience-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 53px;
+}
+.realWorldExperience-child1 {
+  width: 33%;
+  height: 460px;
+  border-radius: 30px;
+  background-image: url(/img/digital\ marketing.jpeg);
+  background-size: cover;
+  background-position: 50%;
+  border: 10px solid #c3c3c3;
+  padding: 1rem 1.5rem;
+}
+.realWorldExperience-child1:hover{
+  border-radius: 100%;
+  border: 10px solid #99ea48;
+}
+.realWorldExperience-child1:hover #details{
+  display: flex;
+}
+.realWorldExperience-child1:hover .realLine2{
+display: none;
+}
+.realWorldExperience-child1:hover .realWorldExperience-child1h6{
+display: none;
+}
+.realWorldExperience-child1 h6 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  padding-top: 356px;
+}
+.realWorld-detail {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: #99ea48;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #010205;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8rem auto;
+  z-index: 9999999;
+  display: none;
+}
+.realWorldExperience-child2 {
+  width: 33%;
+  height: 460px;
+  border-radius: 30px;
+  padding: 1rem 1.5rem;
+  border: 10px solid #c3c3c3;
+  background-image: url(/img/Best\ Digital\ Growth\ Marketing\ Company\ in\ India\ _\ Amura.jpeg);
+  background-size: cover;
+  background-position: 50%;
+}
+.realWorldExperience-child2:hover{
+  border-radius: 100%;
+  border: 10px solid #99ea48;
+}
+.realWorldExperience-child2:hover #see{
+  display: flex;
+}
+.realWorldExperience-child2:hover .realLine{
+  display: none;
+}
+.realWorldExperience-child2:hover .realWorldExperience-child2h6{
+  display: none;
+}
+
+.realLine p {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  padding: 0 1rem;
+}
+.realLine div {
+  height: 1px;
+  width: 54px;
+  background-color: white;
+  display: flex;
+}
+.realLine {
+  display: flex;
+  align-items: center;
+}
+.realLine2 p {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 0 0.5rem;
+}
+.realLine2 div {
+  height: 1px;
+  width: 25px;
+  background-color: white;
+  display: flex;
+}
+.realLine2 {
+  display: flex;
+  align-items: center;
+}
+.realWorldExperience-child2 h6 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  padding-top: 356px;
+}
+.realWorldExperience-child3 {
+  width: 33%;
+  height: 460px;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  border: 10px solid #c3c3c3;
+  background-image: url(/img/How\ to\ Start\ a\ Profitable\ E-Commerce\ Business\ in\ 2025.jpeg);
+  background-size: cover;
+  background-position: 50%;
+}
+.realWorldExperience-child3:hover{
+border-radius: 100%;
+border: 10px solid #99ea48;
+}
+.realWorldExperience-child3:hover #real{
+  display: flex;
+}
+.realWorldExperience-child3:hover .realLine2{
+  display: none;
+}
+.realWorldExperience-child3:hover .realWorldExperience-child3h6{
+  display: none;
+}
+#real p{
+  color: #010205;
+}
+
+.realWorldExperience-child3 p {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  z-index: 99999;
+}
+.realWorldExperience-child3 h6 {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  padding-top: 356px;
+  z-index: 9999;
+}
+.realWorldExperience-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 1rem;
+}
+.review {
+  padding: 5rem 0;
+}
+.review p {
+  font-size: 36px;
+  font-weight: 600;
+  color: #010205;
+  line-height: 160%;
+}
+.reviewProfile {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-between;
+}
+.reviewProfile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.reviewProfile p {
+  font-size: 16px;
+  color: #878691;
+}
+.reviewProfile h6 {
+  font-size: 20px;
+  color: #010205;
+}
+.reviewButton1 {
+  background-color: transparent;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 70px;
+  border: #010205 1px solid;
+}
+.reviewButton2 {
+  background-color: #010205;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 70px;
+  border: none;
+  outline: none;
+}
+.reviewButton p {
+  font-size: 16px;
+}
+.reviewButton {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-between;
+}
+.reviewFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+.marketing-FAQs {
+  background-color: white;
+  padding: 3rem 0;
+  border-radius: 28px;
+  width: 100%;
+}
+.marketing {
+  width: 50%;
+}
+.marketing h1 {
+  font-size: 48px;
+  color: #010205;
+}
+.marketing p {
+  color: #878691;
+  font-size: 16px;
+  line-height: 180%;
+  padding: 3rem 0;
+  width: 75%;
+}
+.marketingLink button {
+  padding: 17px 16px;
+  outline: none;
+  border: 1px solid #010205;
+  background-color: transparent;
+  border-radius: 50px;
+  color: #010205;
+  font-size: 16px;
+  font-weight: 600;
+}
+.marketingLink a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #010205;
+}
+.marketingLink {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.questionTag1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  color: #010205;
+}
+.questionTag2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  color: #010205;
+}
+.FAQs-section {
+  width: 50%;
+}
+.FAQs-section1 {
+  border-top: 2px solid #010205;
+  border-bottom: 2px solid #010205;
+  cursor: pointer;
+}
+.FAQs-section1 h2 {
+  font-size: 24px;
+  color: #010205;
+  padding: 1rem 0;
+  line-height: 150%;
+  width: 80%;
+}
+.FAQs-section1 p {
+  font-size: 16px;
+  color: #878691;
+  padding: 1rem 1rem;
+}
+.minusIcon {
+  display: none;
+}
+.changeicon p {
+  color: #010205;
+}
+
+.answer {
+  display: none;
+}
+.FAQs-section2 {
+  border-bottom: #010205 2px solid;
+  cursor: pointer;
+}
+.FAQs-section2 h2 {
+  font-size: 24px;
+  padding: 1rem 0;
+  line-height: 150%;
+  width: 80%;
+}
+.FAQs-section2 p {
+  font-size: 16px;
+  color: #878691;
+  padding: 1rem 1rem;
+}
+.changeicon2 p {
+  color: #010205;
+}
+
+.answer2 {
+  display: none;
+}
+.FAQs-section3 {
+  border-bottom: #010205 2px solid;
+  cursor: pointer;
+}
+.FAQs-section3 h2 {
+  font-size: 24px;
+  padding: 1rem 0;
+  line-height: 150%;
+  width: 80%;
+}
+.FAQs-section3 p {
+  font-size: 16px;
+  color: #878691;
+  padding: 1rem 1rem;
+}
+.changeicon3 p {
+  color: #010205;
+}
+
+.answer3 {
+  display: none;
+}
+.FAQs-section4 {
+  border-bottom: #010205 2px solid;
+}
+.FAQs-section4 h2 {
+  font-size: 24px;
+  padding: 1rem 0;
+  line-height: 150%;
+  width: 80%;
+}
+.FAQs-section4 p {
+  font-size: 16px;
+  color: #878691;
+  padding: 1rem 1rem;
+}
+.changeicon4 p {
+  color: #010205;
+}
+
+.answer4 {
+  display: none;
+}
+.FAQs-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+}
+.SEO-service {
+  padding: 3rem 0;
+}
+.SEO-serviceContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+.SEO-serviceContent2 {
+  width: 49%;
+}
+.SEO-serviceContent1 {
+  width: 49%;
+}
+.SEO-serviceContent h1 {
+  font-size: 48px;
+  color: #010205;
+  line-height: 130%;
+}
+
+.text {
+  font-size: 16px;
+  color: #878691;
+  line-height: 180%;
+  text-align: justify;
+}
+.more-text {
+  display: none;
+}
+.text.show-more .more-text {
+  display: inline;
+}
+.text.show-more .dash {
+  display: none;
+}
+.read-more-btn {
+  outline: none;
+  border: 1px solid #010205;
+  background-color: transparent;
+  color: #010205;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 17px 32px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.SEO-serviceflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+}
+.SEO-serviceCard1 {
+  background-color: white;
+  width: 33%;
+  height: 316px;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.SEO-serviceCard1 h2 {
+  font-size: 26px;
+  color: #010205;
+  line-height: 150%;
+  padding: 1.5rem 0;
+  width: 80%;
+}
+.SEO-serviceCard1flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.SEO-serviceCard1flex p {
+  color: #878691;
+  font-size: 14px;
+  line-height: 160%;
+  width: 60%;
+}
+.SEO-serviceCard1flex button {
+  padding: 1rem 2rem;
+  border-radius: 70px;
+  outline: none;
+  border: 1px solid #010205;
+  color: #010205;
+  background-color: transparent;
+  cursor: pointer;
+}
+.SEO-serviceCard1flex button:hover {
+  background-color: #010205;
+  color: white;
+  border: none;
+}
+.SEO-serviceCard2 {
+  background-color: white;
+  width: 33%;
+  height: 316px;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.SEO-serviceCard2 h2 {
+  font-size: 26px;
+  color: #010205;
+  line-height: 150%;
+  padding: 1.5rem 0;
+  width: 80%;
+}
+.SEO-serviceCard2flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.SEO-serviceCard2flextext {
+  color: #878691;
+  font-size: 14px;
+  line-height: 160%;
+  width: 70%;
+}
+.showMore {
+  display: none;
+}
+.SEO-serviceCard2flextext.more .showMore {
+  display: inline;
+}
+.SEO-serviceCard2flextext.more .dotss {
+  display: none;
+}
+.SEO-serviceCard2flex-button {
+  padding: 1rem 2rem;
+  border-radius: 70px;
+  outline: none;
+  color: #010205;
+  border: 1px solid #010205;
+  background-color: transparent;
+  cursor: pointer;
+}
+.SEO-serviceCard2flex-button:hover {
+  background-color: #010205;
+  color: white;
+  border: none;
+}
+.SEO-serviceCard3 {
+  background-color: white;
+  width: 33%;
+  height: 316px;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.SEO-serviceCard3 h2 {
+  font-size: 26px;
+  color: #010205;
+  line-height: 150%;
+  padding: 1.5rem 0;
+  width: 90%;
+}
+.SEO-serviceCard3flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.SEO-serviceCard3flextext {
+  color: #878691;
+  font-size: 14px;
+  line-height: 160%;
+  width: 70%;
+}
+.showMoree {
+  display: none;
+}
+.SEO-serviceCard3flextext.moree .showMoree {
+  display: inline;
+}
+.SEO-serviceCard3flextext.moree .dotsss {
+  display: none;
+}
+.SEO-serviceCard3flex-button {
+  padding: 1rem 2rem;
+  border-radius: 70px;
+  outline: none;
+  color: #010205;
+  border: 1px solid #010205;
+  background-color: transparent;
+}
+.SEO-serviceCard3flex-button:hover {
+  background-color: #010205;
+  color: white;
+  border: none;
+}
+.minutes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.minutes p {
+  font-size: 14px;
+  color: #878691;
+}
+.dot1 {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #45a7de;
+}
+.dot2 {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #ea5f38;
+}
+.dot3 {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #6a26f1;
+}
+.readyToWork {
+  background-image: url(/img/image\ 61.png);
+  background-color: black;
+  height: 235px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+}
+.workWithUs {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 5rem 0;
+}
+.workWithUs h1 {
+  font-size: 65px;
+  color: white;
+}
+.workWithUs button {
+  padding: 16px 30px;
+  color: #010205;
+  background-color: white;
+  outline: none;
+  border: 1px solid #010205;
+  border-radius: 70px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.workWithUs button i {
+  margin-left: 2rem;
+}
+.companyname {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 22%;
+}
+.companyname img {
+  width: 51px;
+  height: 51px;
+}
+.companyname h1 {
+  color: #020407;
+  font-size: 37px;
+}
+.companyDescription p {
+  color: #9b9b9c;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 2rem 0;
+  width: 80%;
+}
+.media1 {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: white;
+}
+.media1 i {
+  height: 14px;
+  width: 7px;
+  color: #010205;
+  padding: 10px 13px;
+}
+.media2 {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: white;
+}
+.media2 i {
+  height: 14px;
+  width: 18px;
+  color: #010205;
+  padding: 10px 10px;
+}
+.media3 {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: white;
+}
+.media3 i {
+  height: 15px;
+  width: 16px;
+  color: #010205;
+  padding: 10px 10px;
+}
+.media4 {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: white;
+}
+.media4 i {
+  height: 15px;
+  width: 16px;
+  color: #010205;
+  padding: 10px 10px;
+}
+.mediaLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 1rem;
+}
+.companyDescription {
+  width: 50%;
+}
+
+.navigation ul li {
+  list-style: none;
+  font-size: 14px;
+  color: #9b9b9c;
+  padding: 1rem 0;
+}
+.navigation ul {
+  padding-top: 2rem;
+}
+.navigation h3 {
+  color: #192031;
+  font-size: 18px;
+  font-weight: 600;
+}
+.License ul li {
+  list-style: none;
+  font-size: 14px;
+  color: #9b9b9c;
+  padding: 1rem 0;
+}
+.License ul {
+  padding-top: 2rem;
+}
+.License h3 {
+  color: #192031;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact h3 {
+  color: #192031;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.footerContent {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+.phoneNumber i {
+  height: 24px;
+  width: 24px;
+  color: #010205;
+}
+.phoneNumber {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+}
+.phoneNumber p {
+  font-size: 14px;
+  color: #9b9b9c;
+  padding: 0 0.5rem;
+}
+.email {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+}
+.email i {
+  width: 24px;
+  height: 24px;
+  color: #010205;
+}
+.email p {
+  font-size: 14px;
+  color: #9b9b9c;
+  padding: 0 0.5rem;
+}
+.location {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+}
+.location i {
+  width: 24px;
+  height: 24px;
+  color: #010205;
+}
+.location p {
+  font-size: 14px;
+  color: #9b9b9c;
+  padding: 0 0.5rem;
+}
+.fnlc {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    width: 100%;
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+  nav ul {
+    margin: 0 5rem;
+    width: 100%;
+  }
+  nav ul li {
+    font-size: 14px;
+  }
+  nav ul li a i {
+    font-size: 10px;
+    padding: 0 3px;
+    align-items: center;
+  }
+  nav button {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 14px;
+  }
+  .notification-bell {
+    padding: 0.5rem 0.5rem;
+    font-size: 16px;
+  }
+  .notification {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+  }
+  .hero-content {
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-description {
+    width: 50%;
+    height: 100vh;
+  }
+  .hero-content h1 {
+    font-size: 60px;
+    color: #010205;
+    line-height: 110%;
+    width: 90%;
+  }
+  .hero-content p {
+    font-size: 16px;
+    width: 80%;
+    padding: 0.5rem 0;
+  }
+  .hero-content a {
+    margin: 0 2rem;
+    font-size: 14px;
+  }
+  .hero-content button {
+    padding: 0.8rem 1rem;
+  }
+  .heroimg {
+    width: 50%;
+  }
+  .heroimg img {
+    height: 288px;
+    width: 300px;
+    object-fit: cover;
+  }
+  .trusted-brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2rem;
+    margin: 0 1rem;
+  }
+  .trusted-brands h6 {
+    font-size: 14px;
+    width: 40%;
+  }
+  .trusted-brands h3 {
+    font-size: 14px;
+  }
+  .trusted-brands h3 i {
+    font-size: 17px;
+  }
+  main {
+    margin: 0 1rem;
+  }
+  .serviceDiscription p {
+    font-size: 14px;
+    width: 48%;
+  }
+  .serviceDiscription h1 {
+    font-size: 38px;
+  }
+  .card1 {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  .card1 h1 {
+    color: white;
+    font-size: 64px;
+    letter-spacing: -3%;
+  }
+  .card1 p {
+    font-size: 16px;
+    color: #878691;
+    line-height: 170%;
+  }
+  .card1Profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    align-items: center;
+  }
+  .card1Profile h6 {
+    font-size: 44px;
+  }
+  .card1Profile {
+    padding-top: 10rem;
+  }
+  .card2 h1 {
+    font-size: 45px;
+  }
+  .serviceCard1 {
+    width: 30%;
+  }
+  .serviceCard2 {
+    width: 68%;
+  }
+  .cardicon {
+    padding: 5rem 20rem;
+  }
+  .realWorldExperience-child3 {
+    height: 380px;
+    width: 33%;
+  }
+  .realWorldExperience-child3 h6 {
+    padding-top: 200px;
+  }
+  .realWorldExperience-child2 {
+    height: 380px;
+    width: 33%;
+  }
+  .realWorldExperience-child2 h6 {
+    padding-top: 200px;
+  }
+  .realWorldExperience-child1 {
+    height: 380px;
+    width: 33%;
+  }
+  .realWorldExperience-child1 h6 {
+    padding-top: 200px;
+  }
+  .realWorldExperience h1 {
+    font-size: 40px;
+  }
+  .review {
+    padding: 5rem 1rem;
+  }
+  .review p {
+    font-size: 32px;
+  }
+  .reviewProfile {
+    width: 30%;
+    margin: 0 1rem;
+  }
+  .reviewProfile p {
+    font-size: 14px;
+  }
+  .reviewButton {
+    width: 25%;
+    margin: 0 1rem;
+  }
+  .marketing-FAQs {
+    background-color: white;
+    width: 100%;
+    padding: 3rem 0.5rem;
+  }
+  .marketingLink {
+    width: 60%;
+  }
+  .marketing {
+    width: 49%;
+  }
+
+  .marketingLink button {
+    padding: 16px 16px;
+    font-size: 14px;
+  }
+  .marketingLink a {
+    font-size: 14px;
+    margin: 0 0.3rem;
+  }
+  .SEO-service {
+    padding: 3rem 1rem;
+  }
+  .SEO-serviceContent2 {
+    width: 49%;
+  }
+  .SEO-serviceContent1 {
+    width: 49%;
+  }
+  .SEO-serviceContent h1 {
+    font-size: 42px;
+  }
+  .SEO-serviceCard1 {
+    width: 33%;
+    height: 500px;
+  }
+  .SEO-serviceCard1 h2 {
+    font-size: 26px;
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+  .SEO-serviceCard2 {
+    width: 33%;
+    height: 500px;
+  }
+  .SEO-serviceCard2 h2 {
+    font-size: 26px;
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+  .SEO-serviceCard3 {
+    width: 33%;
+    height: 500px;
+  }
+  .SEO-serviceCard1flex {
+    flex-direction: column;
+    width: 100%;
+  }
+  .SEO-serviceCard1 p {
+    width: 100%;
+  }
+  .SEO-serviceCard2flex {
+    flex-direction: column;
+    width: 100%;
+  }
+  .SEO-serviceCard2 p {
+    width: 100%;
+  }
+  .SEO-serviceCard3flex {
+    flex-direction: column;
+    width: 100%;
+  }
+  .SEO-serviceCard3 p {
+    width: 100%;
+  }
+  .SEO-serviceCard3 h2 {
+    font-size: 26px;
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+  .SEO-serviceCard1flex button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+  }
+  .SEO-serviceCard2flex button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+  }
+  .SEO-serviceCard3flex button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+  }
+  .minutes {
+    width: 100%;
+  }
+  .minutes p {
+    width: 40%;
+    align-self: right;
+  }
+  .workWithUs h1 {
+    font-size: 50px;
+    margin: 0 1rem;
+  }
+  .workWithUs button {
+    padding: 16px 28px;
+    margin: 0 1rem;
+  }
+  .workWithUs button i {
+    margin-left: 1rem;
+  }
+  .footerContent {
+    margin: 5rem 1rem;
+  }
+  .companyDescription {
+    width: 49%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  #side-bar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(168, 255, 81) !important;
+    height: 100vh;
+    top: -10px;
+    left: -10px;
+    width: 0px;
+    transition: width 0.5s ease-in-out;
+    z-index: 99999;
+    margin: 10px;
+    overflow: hidden;
+    align-items: start;
+  }
+
+  #side-bar li {
+    padding: 25px 10px;
+    text-align: justify;
+    font-size: 18px;
+  }
+  .notification {
+    display: none;
+  }
+  #minimize {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 40px;
+    color: #010205;
+    align-self: flex-end;
+    width: 100%;
+    padding-top: 1rem;
+  }
+  #side-btn {
+    display: flex;
+    justify-content: start;
+  }
+  #Hambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #010205;
+    margin-top: 1px;
+  }
+  .service-drop {
+    margin: 2.5rem 0;
+    background-color: white;
+  }
+  .service-drop p {
+    font-size: 16px;
+    padding: 6px 5px;
+  }
+  #nav-dropdown {
+    background-color: white;
+    margin: 2.5rem 0;
+  }
+  #nav-dropdown p {
+    font-size: 16px;
+    padding: 6px 5px;
+  }
+  #case-dropdown {
+    background-color: white;
+    margin: 2.5rem 0;
+  }
+  #case-dropdown p {
+    font-size: 16px;
+    padding: 6px 5px;
+  }
+  #Resource-drop {
+    background-color: white;
+    margin: 2.5rem 0;
+  }
+  #Resource-drop p {
+    font-size: 16px;
+    padding: 6px 5px;
+  }
+  nav button {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: #010205 1px solid;
+    outline: none;
+    margin: 0.3rem 0.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    background-color: transparent;
+  }
+  nav {
+    padding: 1rem 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99999999;
+    width: 100%;
+    background-color: white;
+  }
+
+  .hero {
+    padding-top: 10rem;
+  }
+  .hero-content {
+    flex-direction: column;
+    padding: 0 0.5rem;
+  }
+  .hero-description {
+    width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 60px;
+  }
+  .hero-content p {
+    width: 90%;
+  }
+  .hero-content a {
+    margin: 0 1rem;
+    font-size: 14px;
+  }
+  .heroimg {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .heroimg img {
+    width: 453px;
+    height: 434px;
+  }
+  .trusted-brands {
+    width: 90%;
+    padding: 2rem 0;
+  }
+  .trusted-brands h3 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .trusted-brands h6 {
+    font-size: 12px;
+    width: 30%;
+  }
+  .serviceDiscription {
+    padding: 0 0rem;
+    margin: auto;
+  }
+  .serviceDiscription h1 {
+    font-size: 36px;
+  }
+  .serviceDiscription p {
+    font-size: 14px;
+  }
+  .serviceCard1 {
+    width: 98%;
+  }
+  .serviceCard2 {
+    width: 98%;
+  }
+  .serviceCard {
+    flex-direction: column;
+  }
+  .cardicon {
+    padding: 5rem 20rem;
+  }
+  .card1Profile {
+    width: 50%;
+  }
+  .card1 {
+    margin: 1rem 0;
+  }
+  .card1 p {
+    font-size: 18px;
+  }
+  .realWorldExperience h1 {
+    font-size: 42px;
+  }
+  .realWorldExperience-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 0;
+  }
+  .realWorldExperience-parent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .realWorldExperience-child3 {
+    width: 100%;
+  }
+  .realWorldExperience-child3 h6 {
+    padding-top: 250px;
+  }
+  .realWorldExperience-child2 {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .realWorldExperience-child2 h6 {
+    padding-top: 250px;
+  }
+  .realWorldExperience-child1 h6 {
+    padding-top: 250px;
+  }
+  .realWorldExperience-child1 {
+    width: 100%;
+  }
+  .realWorld-detail{
+    height: 100px;
+    width: 100px;
+    font-size: 12px;
+  }
+  .review {
+    padding: 5rem 0.5rem;
+  }
+  .reviewProfile p {
+    font-size: 14px;
+  }
+  .reviewFlex {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+  .reviewButton {
+    width: 50%;
+    margin: 2rem 0;
+  }
+  .reviewProfile {
+    width: 40%;
+  }
+
+  .FAQs-flex {
+    flex-direction: column;
+  }
+  .FAQs-section {
+    width: 100%;
+  }
+  .marketing {
+    width: 100%;
+  }
+  .marketingLink {
+    margin: 2rem 0;
+  }
+  .FAQs-section {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  .SEO-serviceContent {
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+  .SEO-serviceContent2 {
+    width: 100%;
+  }
+  .SEO-serviceContent1 {
+    width: 100%;
+  }
+  .text {
+    margin: 0.5rem 0;
+  }
+  .SEO-serviceflex {
+    margin: 4rem 0.5rem;
+    flex-direction: column;
+  }
+  .SEO-serviceCard1 {
+    width: 100%;
+    height: 316px;
+  }
+  .SEO-serviceCard2 {
+    width: 100%;
+    margin: 1rem 0;
+    height: 316px;
+  }
+  .SEO-serviceCard3 {
+    width: 100%;
+    height: 316px;
+  }
+  .readyToWork {
+    width: 100%;
+  }
+  .workWithUs {
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+  .workWithUs button {
+    width: 40%;
+    margin: auto;
+  }
+  .workWithUs h1 {
+    font-size: 55px;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .companyDescription {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .companyDescription p {
+    width: 90%;
+  }
+  .footerContent {
+    margin: 3rem 1rem;
+    flex-direction: column;
+  }
+  .fnlc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 30px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .workWithUs button {
+    width: 40%;
+    margin: auto;
+  }
+  .workWithUs h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .SEO-serviceCard1 {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .SEO-serviceCard2 {
+    width: 100%;
+    margin: 1rem 0;
+    height: 400px;
+  }
+  .SEO-serviceCard3 {
+    width: 100%;
+    height: 400px;
+  }
+  .reviewButton {
+    width: 50%;
+    margin: 2rem 0;
+  }
+  .reviewProfile {
+    width: 50%;
+  }
+  .cardicon {
+    padding: 5rem 15rem;
+  }
+  .cardicon i {
+    width: 140px;
+    height: 140px;
+    font-size: 36px;
+  }
+  .realWorld-detail{
+    height: 80px;
+    width: 80px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .workWithUs button {
+    width: 50%;
+    margin: auto;
+  }
+  .workWithUs h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .workWithUs button {
+    padding: 12px 22px;
+    color: #010205;
+    background-color: white;
+    outline: none;
+    border: 1px solid #010205;
+    border-radius: 70px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .SEO-serviceCard1 {
+    width: 100%;
+    height: 500px;
+  }
+  .SEO-serviceCard2 {
+    width: 100%;
+    margin: 1rem 0;
+    height: 500px;
+  }
+  .realWorldExperience-child1 h6 {
+    padding-top: 200px;
+    font-size: 22px;
+  }
+  .realWorldExperience-child2 h6 {
+    padding-top: 200px;
+    font-size: 22px;
+  }
+  .realWorldExperience-child3 h6 {
+    padding-top: 200px;
+    font-size: 22px;
+  }
+  .SEO-serviceCard3 {
+    width: 100%;
+    height: 500px;
+  }
+  .reviewButton {
+    width: 60%;
+    margin: 2rem 0;
+  }
+  .reviewProfile {
+    width: 70%;
+  }
+  .cardicon {
+    padding: 6rem 10rem;
+  }
+  .cardicon i {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+  }
+  .heroimg img {
+    height: 272px;
+    width: 286px;
+    object-fit: cover;
+  }
+  .serviceDiscription {
+    flex-direction: column;
+    padding: 0 0;
+  }
+  .serviceDiscription p {
+    width: 80%;
+    text-align: center;
+  }
+  .serviceDiscription h1 {
+    width: 90%;
+    text-align: center;
+  }
+  .serviceCard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3rem auto;
+  }
+  .card1 {
+    width: 90%;
+    overflow: hidden;
+  }
+  .card2 {
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .serviceCard1 {
+    width: 100%;
+    margin: auto;
+  }
+  .serviceCard2 {
+    width: 100%;
+    margin: auto;
+  }
+  .card2 h1 {
+    font-size: 40px;
+  }
+  .realWorldExperience {
+    margin: 0 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .marketing-FAQs {
+    margin: 0 0;
+  }
+  .SEO-serviceContent h1 {
+    text-align: center;
+    padding: 1rem 0;
+    width: 90%;
+  }
+  .text {
+    width: 90%;
+  }
+}
